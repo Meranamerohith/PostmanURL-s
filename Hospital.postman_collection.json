@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "08fa25cf-b3a9-44da-ab26-1a3de42dd762",
+		"name": "Hospital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34055883"
+	},
+	"item": [
+		{
+			"name": "Get requests",
+			"item": [
+				{
+					"name": "http://localhost:8085/api/hospital/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hospital/id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hospital",
+								"id"
+							]
+						},
+						"description": "get the entity value by model id value."
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8085/api/hospital/hospital/kimsHospitals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hospital/hospital/kimsHospitals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hospital",
+								"hospital",
+								"kimsHospitals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8085/api/hospital/details?name=kimsHospitals&loc=Bangalore",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hospital/details?name=kimsHospitals&loc=Bangalore",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hospital",
+								"details"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "kimsHospitals"
+								},
+								{
+									"key": "loc",
+									"value": "Bangalore"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8085/api/hospital/rating-range?minRating=6.5&maxRating=9.0",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hospital/rating-range?minRating=6.5&maxRating=9.0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hospital",
+								"rating-range"
+							],
+							"query": [
+								{
+									"key": "minRating",
+									"value": "6.5"
+								},
+								{
+									"key": "maxRating",
+									"value": "9.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8085/api/hospital/details/kimsHospitals,ApolloHospitals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hospital/details/kimsHospitals,ApolloHospitals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hospital",
+								"details",
+								"kimsHospitals,ApolloHospitals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8085/api/hospital/sortdesc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hospital/sortdesc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hospital",
+								"sortdesc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8085/api/hospital/0/5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hospital/0/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hospital",
+								"0",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8085/api/hospital/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hospital/getall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hospital",
+								"getall"
+							]
+						},
+						"description": "get the hopital details by id"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "postrequests",
+			"item": [
+				{
+					"name": "http://localhost:8085/api/hospital/save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n\t \"name\":   \"kimsHospitals\",\r\n\t \"loc\" :   \"Bangalore\",\r\n     \"rating\"   :   8.2,\r\n     \"email\"   : \"Kims@gmail.com\",\r\n     \"mobile\"  : \"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/hospital/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hospital",
+								"save"
+							]
+						},
+						"description": "Getting the Hospital Details for JSON values "
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8085/api/hospital/saveall",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n{\r\n\t \"name\":   \"kimsHospitals\",\r\n\t \"loc\" :   \"Bangalore\",\r\n     \"rating\"   :   6.0,\r\n     \"email\"   : \"Kims@gmail.com\",\r\n     \"mobile\"  : \"1234567890\"\r\n},\r\n{\r\n\t \"name\":   \"ApolloHospitals\",\r\n\t \"loc\" :   \"Hyderabad\",\r\n     \"rating\"   :   8.2,\r\n     \"email\"   : \"Apollo@gmail.com\",\r\n     \"mobile\"  : \"1234567909\"\r\n}\r\n\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/hospital/saveall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hospital",
+								"saveall"
+							]
+						},
+						"description": "json array --hospital details"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "delete requests",
+			"item": [
+				{
+					"name": "http://localhost:8085/api/hospital/getall",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/hospital/id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hospital",
+								"id"
+							]
+						},
+						"description": "get all hospitals"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Put requests",
+			"item": [
+				{
+					"name": "http://localhost:8085/api/hospital/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t \"name\":   \"Apollo Hospitals\",\r\n\t \"loc\" :   \"Hyderabad\",\r\n\"rating\"   :   9.2\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/hospital/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"hospital",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
